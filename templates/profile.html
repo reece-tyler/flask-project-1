@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>Profile</title>
+
+  <link rel="stylesheet" type="text/css" href="style/style.css" title="style" />
+</head>
+
+<body>
+<a href="#">
+    <img src="{{path}}" alt="User Image">
+
+</a>
+
+               <h2> {{name}}</h2>
+              <h3>{{email}}</h3>
+
+
+  <div class="profile-nav col-md-3">
+         <form method="post" enctype="multipart/form-data">
+      <input type="file" name="file1">
+      <input type="submit">
+    </form>
+    </div>
+
+
+<a href="{{url_for('logout')}}">Log Out</a> <br> <br>
+</body>
+</html>

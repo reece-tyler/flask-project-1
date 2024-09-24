@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+</head>
+<body onload="termsSubmit()">
+
+      <div class="firstHalf">
+
+        <form method="post">
+          <label for="username">  Username:</label>
+          <input type="text" name="username" required /><br><br>
+          <label for="firstname"> First Name:</label>
+          <input type="text" name="firstname" required /><br><br>
+          <label for="lastname">  Last Name:</label>
+          <input type="text" name="lastname" required /><br><br>
+                      <label for="email">    Email:</label>
+                      <input type="text" name="email" id = "email" required /><br> <br>
+
+
+          <label for="password">   Password:</label>
+          <input type="password" name="password" required /> <br>
+
+          <label for="confirmpassword">   Confirm Password:</label>
+          <input type="password" name="confirmpassword" required /> <br>
+
+          <button type="submit" name="submit" id="submit">Register</button>
+
+          <br>
+
+        </form>
+          <a href="{{url_for('login')}}">Already have an account ? Login </a> <br><br>
+      </div>
+         LEGAL <br>
+
+  </body>
+</html>
